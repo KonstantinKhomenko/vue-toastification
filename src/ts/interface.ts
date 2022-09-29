@@ -17,7 +17,7 @@ const ToastInterface = (
   globalOptions: PluginOptions = {},
   mountContainer = true
 ) => {
-  const events = (globalOptions.eventBus = globalOptions.eventBus || new Vue());
+  const events: any = (globalOptions.eventBus = globalOptions.eventBus || new Vue());
   if (mountContainer) {
     const containerComponent = new (Vue.extend(ToastContainer))({
       el: document.createElement("div"),

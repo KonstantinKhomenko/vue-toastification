@@ -1,5 +1,5 @@
 const Vue = require("vue"); // eslint-disable-line @typescript-eslint/no-var-requires
-const { inject, provide } = require("@vue/composition-api"); // eslint-disable-line @typescript-eslint/no-var-requires
+const { inject, provide } = require("vue"); // eslint-disable-line @typescript-eslint/no-var-requires
 
 const toastSymbol = Symbol("Vue Toastification");
 
